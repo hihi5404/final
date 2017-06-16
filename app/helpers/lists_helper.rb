@@ -1,18 +1,18 @@
 module ListsHelper
-def print_grade(student)
-   if student.grade.to_i > 90
-        "S級(#{student.grade})"
-      elsif student.grade > 80 
-        "A級(#{student.grade})"
+def print_grade(list)
+   if list.grade.to_i > 90
+        "S級(#{list.grade})"
+      elsif list.grade > 80 
+        "A級(#{list.grade})"
      
-      elsif student.grade > 70 
-        "B級(#{student.grade})"
+      elsif list.grade > 70 
+        "B級(#{list.grade})"
      
-      elsif student.grade > 60 
-        "C級(#{student.grade})"
+      elsif list.grade > 60 
+        "C級(#{list.grade})"
 
       else
-        "D級(#{student.grade})"
+        "D級(#{list.grade})"
       end
 end
 end

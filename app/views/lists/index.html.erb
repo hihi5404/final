@@ -23,7 +23,7 @@
       <tr>
         <td><%= list.name %></td>
         <td><%= list.student_id %></td>
-        <td><%= list.grade %></td>
+        <td><%= print_grade(list) %></td>
      <td><%= link_to '編輯', edit_list_path(list), class:"btn btn-success"  %></td>
         <td><%= link_to '刪除', list, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
       </tr>
